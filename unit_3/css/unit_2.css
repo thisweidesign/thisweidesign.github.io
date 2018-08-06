@@ -1,0 +1,30 @@
+body{
+	text-align: center;
+}
+
+h1 {
+	font-family: Din, sans-serif;
+	font-weight: bold;
+	color: #0000FF;
+	font-size: 40px;
+}
+
+h2 {
+	font-family: Din, sans-serif;
+	color: #0000FF;
+	font-size: 22px;
+}
+
+p {
+	font-family: Din, sans-serif;
+	color: #0000FF;
+	font-size: 22px;
+}
+
+a {
+	font-family: Courier New, monospace;
+	font-weight: Bold;
+	color: #0000FF;
+	font-size: 22px;
+	font-style: italic;
+}
