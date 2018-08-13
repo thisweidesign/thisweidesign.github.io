@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+body{
+	color: #a9a9a9;
+	background-image: url(../images/Eileen-Fisher-Earth-Day-TAE.jpg);
+	background-size: cover;
+}
+
+h1{
+	font-family: 'Open Sans Condensed', sans-serif;
+	position: absolute;
+	top: 100px;
+	left: 50px;
+	text-align: left;
+	
+	font-weight: medium;
+	font-size: 34px;
+}
+
+a {
+	color: #a9a9a9;
+}
+
+a:visited {
+	color: #a9a9a9;
+}
+
+.yourearthday{
+	position: absolute;
+	bottom: 250px;
+	left: 50px;
+	text-align: left;
+	font-family: Helvetica;
+	font-weight: light;
+	font-size: 24px;
+}
+
+#livinglocal{
+	position: absolute;
+	bottom: 200px;
+	left: 50px;
+	text-align: left;
+	font-family: Helvetica;
+	font-weight: bold;
+	font-size: 36px;
+}
+
+.shopyourstyle{
+	position: absolute;
+	bottom: 100px;
+	left: 50px;
+	text-align: left;
+	font-family: Helvetica;
+	font-weight: light;
+	font-size: 24px;
+	text-decoration: underline;
