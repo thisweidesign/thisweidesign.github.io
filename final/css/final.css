@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+nav a{
+	font-family: 'Roboto', sans-serif;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 14px;
+	margin-top: 4em;
+	margin-bottom: 2em;
+	margin-left:4em;
+	color: grey;
+}
+
+nav{
+
+	height: 108px;
+}
+
+
+a:hover{
+	color: #000000;
+	font-weight: bold;
+	border-bottom: 3px solid black;
+	padding-bottom: 10px;
+}
+
+
+#content{
+	font-family: 'Roboto', sans-serif;
+	background-color: white;
+	height: 1800px;
+	/*background-color:red;*/
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+img{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+img:hover{
+	opacity: 0.1;
+}
+
+article{
+	margin: 0 auto;
+	display: inline-block;
+	margin-left: 16px;
+	width: 30%;
+
+/*background-color: red;*/
+}
+
+p{
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	padding-left:2em;
+	color: grey;
+	letter-spacing:2px;
+}
+
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+span {
+	font-family: 'Arial';
+}
+
+
+
+@media only screen and (max-width: 835px) {
+	article {
+		width: 45%;
+	}
+
+}
+
+@media only screen and (max-width: 590px) {
+	article {
+		width: 100%;
+	}
+
+}
+
+
+
+
