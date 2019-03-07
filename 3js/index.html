@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Three JS</title>
+        <style>
+        body{
+          margin:0;  
+        }
+
+        canvas{
+            background:red;
+        }
+        </style>
+    </head>Ï
+
+    <body>
+            <script src="js/three.js"></script>
+            <script src="js/OrbitControls.js"></script>
+    </body>
+
+    <script>
+        var scene = new THREE.Scene();
+
+        var camera = new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight, 0.1,1000);
+
+        var renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth,window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        var geometry = new THREE.SphereGeometry(10,10,10);
+        var material = new THREE.MeshNormalMaterial({wireframe:true});
+        var sphere = new THREE.Mesh(geometry, material);
+        sphere.position.x = 40;
+        scene.add(sphere);
+
+        var geometry2 = new THREE.SphereGeometry(10,10,10);
+        var material2 = new THREE.MeshNormalMaterial({wireframe:true});
+        var sphere2 = new THREE.Mesh(geometry2, material2);
+        sphere2.position.x = -40;
+        scene.add(sphere2);
+
+        camera.position.z =70;
+
+        var control = new THREE.OrbitControls(camera,renderer.domElement);
+        control.minDistance = 1;
+        control.maxDistance = 1000;
+
+
+
+        var animate = function(){
+            requestAnimationFrame(animate);
+
+            sphere.rotation.x +=0.05;
+            sphere2.rotation.x +=-0.05;
+            control.update();
+            renderer.render(scene,camera);
+        }
+
+        animate();
+
+        
+    </script>
+</html>
