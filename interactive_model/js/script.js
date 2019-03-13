@@ -11,9 +11,6 @@ const colors = [0x37BE95, 0xF3F3F3, 0x6549C0];
 init();
 animate();
 
-let width = window.innerWidth,
-	height = window.innerHeight;
-
 var geometry = new THREE.BoxGeometry(1, 1, 1);
 var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
 
@@ -73,7 +70,7 @@ function init() {
 }
 
 function onResize() {
-	camera.aspect = width / height;
+	camera.aspect = window.innerWidth / window.innerHeight;
 	camera.updateProjectionMatrix();
 	renderer.setSize(window.innerWidth, window.innerHeight);
 }
