@@ -38,8 +38,8 @@ controls.enableZoom = true;
 function init() {
 	
 	
-        width = window.innerWidth,
-	height = window.innerHeight;
+        let width = window.innerWidth,
+	let height = window.innerHeight;
 	scene = new THREE.Scene();
 	camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
 	camera.lookAt(scene.position);
