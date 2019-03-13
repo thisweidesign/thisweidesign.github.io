@@ -109,10 +109,10 @@ function drawSaturn() {
 
   planet.castShadow = true;
   planet.receiveShadow = true;
-  planet.position.set(0, 4, 0);
+  planet.position.set(0, 40, 0);
   saturn.add(planet);
 
-  const ringGeometry = new THREE.TorusGeometry(120, 12, 6, 15);
+  const ringGeometry = new THREE.TorusGeometry(10, 0, 60, 0);
   const ringMeterial = new THREE.MeshStandardMaterial({
     color: 0x6549C0,
     shading: THREE.FlatShading
