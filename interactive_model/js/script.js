@@ -19,19 +19,6 @@ controls.enableDamoing = true;
 controls.camoingFacotr = 0.25;
 controls.enableZoom = true;
 
-//var keyLight = new THREE.DirectionalLight(new THREE.Color('hsl(30,100%,75%)'), 1.0);
-//keyLight.position.set(-100, 0, 100);
-
-//var fillLight = new THREE.DirectionalLight(new THREE.Color('hsl(240,100%,75%)'), 0.75);
-//keyLight.position.set(100, 0, 100);
-
-//var backLight = new THREE.DirectionalLight(0xffffff, 1.0);
-//backLight.position.set(100, 0, 100).normalize();
-
-//scene.add(keyLight);
-//scene.add(fillLight);
-//scene.add(backLight);
-
 function init() {
 	
 	
@@ -95,14 +82,6 @@ objLoader.load('models/bigmax.obj', function (object) {
 	scene.add(object);
 });
 
-//var animate = function () {
-//requestAnimationFrame(animate);
-//controls.update();
-
-//renderer.render(scene, camera);
-//}
-
-//animate();
 
 function drawParticles() {
 	particles = new THREE.Group();
