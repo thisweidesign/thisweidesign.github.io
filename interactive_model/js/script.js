@@ -33,8 +33,6 @@ function init() {
 	renderer.setClearColor(0x000000, 0);
 	renderer.shadowMap.enabled = true;
 
-	controls = new THREE.OrbitControls(camera, renderer.domElement);
-
 	const ambientLight = new THREE.AmbientLight();
 	scene.add(ambientLight);
 
