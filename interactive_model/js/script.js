@@ -38,16 +38,14 @@ controls.enableZoom = true;
 function init() {
 	
 	
-        let width = window.innerWidth,
-	let height = window.innerHeight;
-	scene = new THREE.Scene();
-	camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
+        scene = new THREE.Scene();
+	camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 	camera.lookAt(scene.position);
 	camera.position.z = 500;
 
 	renderer = new THREE.WebGLRenderer({ alpha: true });
 	renderer.setPixelRatio(window.devicePixelRatio);
-	renderer.setSize(width, height);
+	renderer.setSize(window.innerWidth, window.innerHeight);
 	renderer.setClearColor(0x000000, 0);
 	renderer.shadowMap.enabled = true;
 
@@ -75,11 +73,9 @@ function init() {
 }
 
 function onResize() {
-	width = window.innerWidth;
-	height = window.innerHeight;
 	camera.aspect = width / height;
 	camera.updateProjectionMatrix();
-	renderer.setSize(width, height);
+	renderer.setSize(window.innerWidth, window.innerHeight);
 }
 
 function animate() {
